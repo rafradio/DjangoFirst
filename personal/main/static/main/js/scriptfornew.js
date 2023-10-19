@@ -6,8 +6,8 @@ function SaveToJson() {
 
 SaveToJson.prototype.initSettings = function() {
     this.returnButton.addEventListener('click', () => {
-        newUrl = new URL(window.location.href); 
-        fullPath = new URL("http://" + newUrl.host + "/about");
+        let newUrl = new URL(window.location.href); 
+        let fullPath = new URL("http://" + newUrl.host + '/');
         location.href = fullPath;
     });
 }
